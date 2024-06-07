@@ -5,10 +5,15 @@
 - CPU：i9-13900k
 如果出现爆显存等问题，请降低图片分辨率或者更换性能更好的电脑。
 
-常见问题：
+### 预览图：
+<img src="https://github.com/baicai99/ComfyUI_Backgorund_fusion/assets/101706274/0b5ed5a7-f4c6-4e14-9a04-afa7f02e7753" width="400" alt="图片描述">
+<img src="https://github.com/baicai99/ComfyUI_Backgorund_fusion/assets/101706274/587015d2-827e-4e1b-9c5d-91548685e9f6" width="400" alt="图片描述">
+<img src="https://github.com/baicai99/ComfyUI_Backgorund_fusion/assets/101706274/56512024-7db2-4c91-a4e9-091c31c61405" width="400" alt="图片描述">
+<img src="https://github.com/baicai99/ComfyUI_Backgorund_fusion/assets/101706274/bb139025-c28a-4cd7-8cc1-01fa4645d9fb" width="400" alt="图片描述">
+
+### 常见问题：
 
 Q: 这个工作流的作用是什么？  
-
 A: 这个工作流主要用于在将人物使用PS融合成到背景图像后，若融合度不够时，你可能会使用Stable Diffusion webui进行进一步的图像融合。该工作流可以替代手动的图像融合过程。然而，前提条件是人物已经被合成到背景中，而不是从白底图生成背景。这两个工作流的逻辑有所不同。
 
 Q：如何使用这套工作流？  
