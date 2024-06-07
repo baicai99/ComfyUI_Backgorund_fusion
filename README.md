@@ -1,57 +1,61 @@
-# ComfyUI_Backgorund_fusion
-
 ### Introduction
 
-My computer configuration:
-- GPU: RTX4080
+My computer specifications:
+- Graphics Card: RTX 4080
 - CPU: i9-13900k
-If there are issues with video memory overload, please reduce the image resolution or upgrade to a better-performing computer.
+If you encounter issues such as out-of-memory errors, please reduce the image resolution or use a higher-performance computer.
 
-Frequently Asked Questions:
+### Preview Images:
+<img src="https://github.com/baicai99/ComfyUI_Backgorund_fusion/assets/101706274/0b5ed5a7-f4c6-4e14-9a04-afa7f02e7753" width="400" alt="Image Description">
+<img src="https://github.com/baicai99/ComfyUI_Backgorund_fusion/assets/101706274/587015d2-827e-4e1b-9c5d-91548685e9f6" width="400" alt="Image Description">
+<img src="https://github.com/baicai99/ComfyUI_Backgorund_fusion/assets/101706274/56512024-7db2-4c91-a4e9-091c31c61405" width="400" alt="Image Description">
+<img src="https://github.com/baicai99/ComfyUI_Backgorund_fusion/assets/101706274/bb139025-c28a-4cd7-8cc1-01fa4645d9fb" width="400" alt="Image Description">
+
+### FAQs:
 
 Q: What is the purpose of this workflow?
-A: This workflow is mainly used for further image blending with Stable Diffusion webui after integrating people into background images using Photoshop, if the blending is insufficient. This workflow can replace the manual image blending process. However, the prerequisite is that the person has already been integrated into the background, rather than generating the background from a white background image. The logic of these two workflows is different.
+A: This workflow is primarily used for further image fusion using Stable Diffusion webui when the fusion of a person into a background image using Photoshop is insufficient. This workflow can replace the manual image fusion process. However, the prerequisite is that the person has already been integrated into the background, not generating the background from a white image. These two workflows have different logics.
 
 Q: How do I use this workflow?
-A: Step 1: You need to find the corresponding model pose on the material website and blend it into the image using Photoshop. Step 2: Simply import the image into the workflow to obtain a copyright-friendly and exquisite model image.
+A: Step 1: You need to find the corresponding model pose on a material website and then use Photoshop to blend it into the image. Step 2: Directly import the image into the workflow to produce a refined, copyright-compliant model image.
 
-Q: What should I do if there is an error?
-A: Please directly post it in the comment section, and I will respond at 10 AM, 3 PM, and 9 PM (GMT+8) every day.
+Q: What should I do if an error occurs?
+A: Post it directly in the comment section. I check the comments every day at 10 AM, 3 PM, and 9 PM (GMT+8).
 
-Q: I feel that the blending is not good. 
-A: There are many factors that determine whether the blending is good or not, such as the selection of the original image and the background image. The higher the quality of the original image, theoretically, the better the blending effect, and vice versa.
+Q: What if the fusion is not good?
+A: The quality of the fusion depends on many factors, such as the choice of the original image and the background image. The higher the quality of the original image, the better the theoretical fusion effect, and vice versa.
 
-If you are unable to download through the provided links, it is likely because your location is not in China. Please use a VPN or other methods to access.
+If you cannot download via the provided link, it is likely because your location is outside of China. Please use a VPN or other means to access it.
 
 - Recommended large model: [majic V7](https://www.liblib.art/modelinfo/bced6d7ec1460ac7b923fc5bc95c4540)
 
-- Recommended VAE: [Realistic difConsistency Negative (Pack)](https://www.liblib.art/modelinfo/232ff495f7c14381910dc6f4df78a7ab)
+- Recommended Vae: [Realistic difConsistency Negative (Pack)](https://www.liblib.art/modelinfo/232ff495f7c14381910dc6f4df78a7ab)
 
 ### v1.0.5_20240531
-- Optimization: Improved parameters.
-- New: Updated interface, now more visually appealing.
+- Optimization: Parameter optimization.
+- New: Updated interface, more aesthetically pleasing.
 
 ### v1.0.4_20240529
-- Enhancement: Addressed image generation issues to ensure perfect image quality.
-- Fix: Corrected the issue with facial realism, which was due to using an anime-style VAE.
+- Continuous output of images, with perfect results from this workflow.
+- Fix: Realized that the lack of realism in facial features was due to using an anime-style vae.
 
 ### v1.0.3_20240528
-- Added: Edge blur node for better blending of the model with the surroundings, eliminating any gray edges.
-- Added: Discovered that the shadow may not appear when sitting, so I used the double mask. If there is insufficient recognition, you can directly edit the mask in the loading area.
-- Fixed: Changed many parameters to make the images appear more natural.
+- New: Added an edge blur node to better integrate the model with the surrounding environment, eliminating gray edges.
+- New: Implemented a dual-mask system for seated poses to ensure proper shadow rendering; if recognition is insufficient, use mask editing in the load area.
+- Fix: Adjusted numerous parameters to produce more natural images.
 
 ### v1.0.2_20240527
-- Added: Added a node for high-resolution images with a large computational load, to directly reduce the resolution. Default is not connected.
-- Fixed: Changed many parameters to make the images appear more natural.
+- New: Added a node for reducing resolution when dealing with extremely high-pixel images, which significantly reduces computation load; not connected by default.
+- Fix: Adjusted numerous parameters to produce more natural images.
 
 ### v1.0.1_20240527
-- Changed: Replaced openpose full with dw openpose.
-- Changed: Replaced canny with anyline.
-- Optimized: Improved denoising, feathering, semantic segmentation, hint word inference, and parameters.
-- Optimized: More natural smiles.
+- Change: Replaced openpose full with dw openpose.
+- Change: Replaced canny with anyline.
+- Optimization: Improved denoising, feathering, semantic segmentation, prompt inversion, and parameters.
+- Optimization: More natural smiles.
 
 ### v1.0.0_20240526
-- Added: Initial version.
-- Added: Character blending
-- Added: Facial redrawing
-- Added: Hand redrawing
+- New: Initial version.
+- New: Person integration.
+- New: Face redraw.
+- New: Hand redraw.
